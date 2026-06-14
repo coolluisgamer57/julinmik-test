@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Look Closely</title>
+
+    <style>
+        body {
+            background-color: black;
+            margin: 0;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+
+        .top-text {
+            text-align: center;
+            font-size: 22px;
+            margin-top: 20px;
+        }
+
+        .container {
+            position: relative;
+            width: 500px;
+            margin: 80px auto;
+        }
+
+        img {
+            width: 100%;
+            border: 3px solid black;
+        }
+
+        /* invisible clickable hotspot */
+        .hotspot {
+            position: absolute;
+            top: 120px;   /* change position */
+            left: 180px;  /* change position */
+            width: 90px;
+            height: 80px;
+            background: transparent;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div class="top-text">You typed that correctly</div>
+
+<div class="container">
+    <img src="https://th.bing.com/th/id/OIP.cpHx2AwDdFJfuJLPfoSPVwHaHa?w=139&h=150&c=6&r=0&o=7&dpr=1.5&pid=1.7&rm=3" alt="image">
+
+    <!-- clickable hidden area -->
+    <button class="hotspot" onclick="reveal()"></button>
+</div>
+
+<script>
+function reveal() {
+    alert("Hidden link: https://imgur.com/a/BZES7DP");
+}
+</script>
+
+</body>
+</html>
