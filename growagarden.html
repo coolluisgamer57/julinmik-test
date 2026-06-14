@@ -1,86 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>??</title>
+  <meta charset="UTF-8">
+  <title>Centered Layout</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background: black;
+      font-family: Arial, sans-serif;
+      position: relative;
+    }
 
-<style>
-  body {
-    margin: 0;
-    height: 100vh;
-    background: black;
-    font-family: Arial, sans-serif;
-    overflow: hidden;
-  }
+    .top-text {
+      position: absolute;
+      top: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      color: white;
+      font-size: 24px;
+      text-align: center;
+    }
 
-  .top {
-    position: absolute;
-    top: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    color: white;
-    font-size: 22px;
-  }
+    .bottom-text {
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      color: white;
+      font-size: 20px;
+      text-align: center;
+    }
 
-  .bottom {
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    color: white;
-    font-size: 18px;
-    opacity: 0.9;
-  }
-
-  .center {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    max-width: 300px;
-    filter: contrast(1.1);
-  }
-
-  /* Hidden hint (invisible unless inspected) */
-  .ghost {
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translateX(-50%);
-    color: black;
-    font-size: 12px;
-    opacity: 0.02;
-    user-select: none;
-  }
-
-  /* Hover clue */
-  .bottom:hover::after {
-    content: " .-. .-.. --- --- -";
-    position: absolute;
-    bottom: 40px;
-    left: 50%;
-    transform: translateX(-50%);
-    color: lime;
-    font-size: 14px;
-  }
-</style>
+    .center-image {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      max-width: 300px;
+      height: auto;
+    }
+  </style>
 </head>
-
 <body>
 
-<div class="top">It is not what it seems.</div>
+  <div class="top-text">I love my pencil sharpener</div>
 
-<img class="center" src="https://ibb.co.com/WWGkqXY7" alt="center image">
-
-<div class="bottom">Look below the surface.</div>
-
-<!-- Hidden Morse-style clue -->
-<div class="ghost">YOU ALREADY FOUND PART OF IT</div>
-
-<script>
-  // Hidden console clue
-  console.log("clue: shift the image + check opacity layers");
-</script>
+  <img class="center-image" src="your-image.jpg" alt="Centered Image">
+    "https://ibb.co.com/7dFgF4Qc"  
+  <div class="bottom-text">i wonder if you also can SHARPEN something else??</div>
 
 </body>
 </html>
