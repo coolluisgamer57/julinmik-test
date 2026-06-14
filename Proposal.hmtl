@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ok this is where it get serious</title>
+
+    <style>
+        body {
+            background-color: black;
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .title {
+            color: white;
+            font-size: 32px;
+            font-family: "Arial Black", Arial, sans-serif;
+            letter-spacing: 2px;
+            margin-bottom: 20px;
+            text-shadow: 0 0 10px white, 0 0 20px gray;
+        }
+
+        img {
+            width: 500px;
+            height: auto;
+            border: 2px solid white;
+            box-shadow: 0 0 15px white;
+        }
+    </style>
+</head>
+<body>
+
+<div class="title">Maybe you should look Deeper..</div>
+
+<img src="https://imgur.com/a/UNTPM8P" alt="image">
+
+</body>
+</html>
