@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Red Text</title>
+    <title>Redirect Page</title>
+
     <style>
         body {
             background-color: black;
+            color: red;
             margin: 0;
             height: 100vh;
             display: flex;
@@ -17,17 +19,22 @@
         }
 
         .text {
-            color: red;
-            font-size: 36px;
-            margin: 15px 0;
+            font-size: 40px;
+            margin: 20px 0;
         }
     </style>
+
+    <script>
+        setTimeout(function() {
+            window.location.href = "https://example.com";
+        }, 5000); /* 5000 milliseconds = 3 seconds */
+    </script>
 </head>
 <body>
 
     <div class="container">
-        <div class="text">You thought it was done didnt you</div>
-        <div class="text">dont worry were near "THE LAST THREE"</div>
+        <div class="text">Your near from getting the Julinmik.</div>
+        <div class="text">You still need to beat these last 3 html</div>
     </div>
 
 </body>
