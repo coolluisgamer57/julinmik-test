@@ -1,1 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Welcome to myhouse</title>
 
+<style>
+body{
+    margin:0;
+    background:black;
+    overflow:hidden;
+    font-family:Arial, sans-serif;
+    color:white;
+}
+
+/* Top text */
+.top-text{
+    position:absolute;
+    top:30px;
+    left:50%;
+    transform:translateX(-50%);
+    color:red;
+    font-size:40px;
+    z-index:3;
+}
+
+/* Main image area */
+.center-container{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
+
+/* Text behind image */
+.behind-text{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    font-size:90px;
+    color:white;
+    opacity:0.15;
+    z-index:0;
+    white-space:nowrap;
+}
+
+/* Main image */
+.main-image{
+    position:relative;
+    width:300px;
+    z-index:2;
+}
+
+/* Side texts */
+.left-text{
+    position:absolute;
+    top:50%;
+    left:-180px;
+    transform:translateY(-50%);
+    opacity:0.5;
+    font-size:25px;
+    white-space:nowrap;
+}
+
+.right-text{
+    position:absolute;
+    top:50%;
+    right:-180px;
+    transform:translateY(-50%);
+    opacity:0.5;
+    font-size:25px;
+    white-space:nowrap;
+}
+
+/* Upside-down text */
+.bottom-right{
+    position:absolute;
+    bottom:20px;
+    right:20px;
+    opacity:0.2;
+    transform:rotate(180deg);
+    font-size:22px;
+}
+
+/* Small image */
+.small-image{
+    position:absolute;
+    bottom:30px;
+    left:30px;
+    width:100px;
+}
+</style>
+</head>
+<body>
+
+<div class="top-text">
+    RED MESSAGE
+</div>
+
+<div class="center-container">
+
+    <div class="behind-text">
+        remember 
+    </div>
+
+    <div class="left-text">
+        LEFT TEXT
+    </div>
+
+    <img class="main-image" src="https://th.bing.com/th?q=Emoji+Laughing+Smiley+Face+Clip+Art&w=120&h=120&c=1&rs=1&qlt=70&r=0&o=7&cb=1&dpr=1.5&pid=InlineBlock&rm=3&mkt=en-ID&cc=ID&setlang=en&adlt=strict&t=1&mw=247" alt="Main Image">
+
+    <div class="right-text">
+        just give up
+    </div>
+
+</div>
+
+<img class="https://i.ibb.co.com/B2P0zQ7G/Screenshot-2026-06-15-080128.png" src="hey over here" alt="Small Image">
+
+<div class="bottom-right">
+    what are you looking at
+</div>
+
+</body>
+</html>
