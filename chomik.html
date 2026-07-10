@@ -1,20 +1,62 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>idk what to type</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nothjulinmik</title>
+
+<style>
+body{
+    margin:0;
+    background:black;
+    color:white;
+    font-family:Arial, sans-serif;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+.container{
+    text-align:center;
+}
+
+img{
+    width:300px;
+    max-width:80%;
+    margin-bottom:20px;
+}
+</style>
+
 </head>
 <body>
 
-<h1>Welcome</h1>
+<div class="container" id="content"></div>
 
-<!-- fumum rubrum (def not smth important) -->
+<script>
 
-<img src="https://th.bing.com/th/id/OIP.pV792JV94ndPj7zDxUFz-wHaHa?w=161&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3" alt="normal image">
+const content = document.getElementById("content");
 
-<!--
-    <a href="https://ibb.co.com/8LfWy9dC">a</a>
-    
--->
+if(localStorage.getItem("hasKey") === "true"){
+
+    content.innerHTML = `
+        <img src="https://i.ibb.co.com/5W9FWxwS/Screenshot-2026-07-03-192644.png" alt="Opened Door">
+        <h1>The lock Opens</h1>
+        <p>The code is: <b>ySGCs</b></p>
+    `;
+
+}else{
+
+    content.innerHTML = `
+        <img src="https://i.ibb.co.com/1JzgjhQp/Screenshot-2026-07-10-134201.png" alt="Locked Door">
+        <h1>The lock is Locked what do u think</h1>
+        <p>You need a key from not.html</p>
+    `;
+
+}
+
+</script>
 
 </body>
 </html>
